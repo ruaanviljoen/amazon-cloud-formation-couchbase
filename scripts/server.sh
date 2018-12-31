@@ -15,6 +15,9 @@ echo services \'$services\'
 echo stackName \'$stackName\'
 echo version \'$version\'
 
+echo "Updating APT"
+apt-get update
+
 #######################################################"
 ############## Install Couchbase Server ###############"
 #######################################################"
