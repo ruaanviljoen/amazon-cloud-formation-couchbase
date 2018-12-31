@@ -1,6 +1,6 @@
 # simple
 
-This is an Amazon Cloud Formation Template (CFT) that installs Couchbase Enterprise.  You can run it from the AWS CLI or using the web console.
+This is an Amazon Cloud Formation Template (CFT) that installs Couchbase Community.  You can run it from the AWS CLI or using the web console.
 
 # How To Video
 
