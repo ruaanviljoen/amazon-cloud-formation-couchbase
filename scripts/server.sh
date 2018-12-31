@@ -20,8 +20,9 @@ echo version \'$version\'
 #######################################################"
 echo "Installing Couchbase Server..."
 
-wget https://packages.couchbase.com/releases/${version}/couchbase-server-enterprise-${version}-centos6.x86_64.rpm
-rpm --install couchbase-server-enterprise-${version}-centos6.x86_64.rpm
+wget https://packages.couchbase.com/releases/${version}/couchbase-server-community_${version}-ubuntu16.04_amd64.deb
+dpkg -i couchbase-server-community_${version}-ubuntu16.04_amd64.deb
+apt install -f --yes #Auto resolve dependencies because gdebi-core isn't installed
 
 #######################################################"
 ############ Turn Off Transparent Hugepages ###########"
