@@ -64,8 +64,9 @@ vm.swappiness = 0
 source util.sh
 formatDataDisk
 
-yum -y update
-yum -y install jq
+sudo add-apt-repository ppa:rmescandon/yq
+sudo apt update
+sudo apt install yq -y
 
 if [ -z "$6" ]
 then
